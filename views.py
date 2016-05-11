@@ -1,5 +1,5 @@
 from flask import render_template, request, redirect, flash,url_for
-# from models import Category, Todo, Priority, db
+from models import Category, Todo, Priority, db
 from todoapp import app
 
 
@@ -7,8 +7,8 @@ from todoapp import app
 def list_all():
     return render_template(
         'list.html',
-        # categories=Category.query.all(),
-        # todos=Todo.query.all(),#join(Priority).order_by(Priority.value.desc())
+        categories=Category.query.all(),
+        todos=Todo.query.all(),#join(Priority).order_by(Priority.value.desc())
     )
 
 
