@@ -26,7 +26,7 @@
         </div>
         <div class="col-md-9">
             {% if todos|count > 0 %}
-            <h3 class="lead">Todos</h3>
+            <h3 class="lead">Items List</h3>
             <table id="todo-table" class="table">
                <tr>
                     <th>#</th>
@@ -51,14 +51,14 @@
                             </form>
                             <form id=isdone action="{{ url_for('mark_done', todo_id=todo.id) }}" method="post">
                                 {#<input class="btn btn-xs btn-default" type="submit" name="mark_done" value="Done"{% if todo.is_done %} disabled{% endif %}>#}
-                                <a onclick="$('#isdone').submit()" class="btn btn-xs btn-default" id="mark_done"{% if todo.is_done %} disabled{% endif %}>{{ icon('check') }} Done</a>
+                                <a onclick="$('#isdone').submit()" class="btn btn-xs btn-default" id="mark_done"{% if todo.is_done %} disabled{% endif %}>{{ icon('check') }} Bought</a>
                             </form>
                         </td>
                     </tr>
                 {%- endfor %}
             </table>
             {% else %}
-            <h3 class=lead>No Todos Yet</h3>
+            <h3 class=lead>No item Yet</h3>
             {% endif %}
         </div>
     </div>

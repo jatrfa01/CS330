@@ -16,3 +16,7 @@ if __name__ == '__main__':
 
 	port = int(os.environ.get("PORT", 5000))
 	app.run(host='0.0.0.0', port=port, debug=True)
+
+
+
+	#postgres://paqumbaesgrokz:cpMJAC5HNnXjX28mQHwSh2LnGN@ec2-54-225-91-215.compute-1.amazonaws.com:5432/dcn82n11q37968
