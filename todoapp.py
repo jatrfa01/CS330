@@ -8,8 +8,8 @@ app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'
 
 from views import *
 
-#from models import db
-#db.create_all()
+from models import db
+db.create_all()
 
 
 if __name__ == '__main__':
