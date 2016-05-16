@@ -79,7 +79,8 @@ def new_category():
 @app.route('/edit_category/<int:category_id>', methods=['GET', 'POST'])
 def edit_category(category_id):
     category = Category.query.get(category_id)
-    if request.method == 'GET':
+    form = PriorityForm(obj=category) #START AND END 
+    if request.method == 'GET': 
         return render_template(
             'new-category.html',
             category=category

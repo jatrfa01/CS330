@@ -1,6 +1,11 @@
 from datetime import datetime
 from flask.ext.sqlalchemy import SQLAlchemy
 from todoapp import app
+#add
+from flask.ext.wtf import Form
+from wtforms.fields import TextField, BooleanField
+from wtforms.validators import Required
+#end
 
 db = SQLAlchemy(app)
 
@@ -25,8 +30,12 @@ class Priority(db.Model):
     value = db.Column('value', db.Integer)
 
 
+
 class Category(db.Model):
     __tablename__ = "category"
     id = db.Column('id', db.Integer, primary_key=True)
     name = db.Column('name', db.Unicode)
+    #start
 
+class PriorityForm(Form):
+    name = TextField('name') #END 
