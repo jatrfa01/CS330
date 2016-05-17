@@ -22,8 +22,3 @@ if __name__ == '__main__':
 
 
 
-
-
-	#postgres://paqumbaesgrokz:cpMJAC5HNnXjX28mQHwSh2LnGN@ec2-54-225-91-215.compute-1.amazonaws.com:5432/dcn82n11q37968
-
-	#ID: todoapp-1313 (#579706606473)
