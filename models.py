@@ -1,6 +1,6 @@
 from datetime import datetime
 from flask.ext.sqlalchemy import SQLAlchemy
-from todoapp import app
+from shoppingapp import app
 #add
 from flask.ext.wtf import Form
 from wtforms.fields import TextField, BooleanField
